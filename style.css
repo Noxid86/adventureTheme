@@ -1,0 +1,10 @@
+/**
+ * Theme Name: The Adventure
+ * Template: frost 
+ * ...other header fields
+ */
+
+ #AdventureWindow {
+    padding: 2rem;
+    background-color: beige;
+ }
