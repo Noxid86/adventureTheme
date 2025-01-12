@@ -1,10 +1,81 @@
-/**
- * Theme Name: The Adventure
- * Template: frost 
- * ...other header fields
- */
+/*
+    Theme Name:     Adventure
+    Theme URI:      http://example.com/parent-theme-child
+    Description:    A child theme for the Parent Theme.
+    Author:         Your Name
+    Author URI:     http://example.com
+    Template:       frost
+    Version:        1.0.0
+*/
+html {
+  margin: 0 auto;
+  position: relative;
+}
 
- #AdventureWindow {
-    padding: 2rem;
-    background-color: beige;
- }
+#AdventureWindow {
+  height: 100%;
+  width: 100%;
+  max-width: 900px;
+  background-color: blue;
+}
+#AdventureWindow .Fullscreen {
+  position: absolute;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: pink;
+  position: absolute;
+  top: 0;
+}
+#AdventureWindow .output {
+  background-color: black;
+  height: calc(100% - 100px);
+  width: 100%;
+  padding: 2rem;
+  overflow-y: scroll;
+}
+#AdventureWindow .output a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+#AdventureWindow .output p {
+  color: rgb(255, 255, 255);
+  line-height: 1.25;
+  transition: color 0.75s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -webkit-transition: opacity 0.25s ease-in-out;
+}
+#AdventureWindow .output.faded p {
+  color: rgba(255, 255, 255, 0.2);
+}
+#AdventureWindow .output.faded .highlight {
+  color: rgb(255, 255, 255);
+}
+#AdventureWindow .toolbar {
+  background-color: rgb(112, 112, 112);
+  height: 100px;
+  width: 100%;
+  float: right;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+}
+#AdventureWindow .toolbar .icon {
+  float: left;
+  background-color: transparent;
+  max-height: 100px;
+  max-width: 100px;
+}
+#AdventureWindow .toolbar .icon > svg {
+  height: 100%;
+  width: 100%;
+}
+#AdventureWindow .toolbar .icon > svg > path {
+  fill: white;
+}
+
+/*# sourceMappingURL=style.css.map */
